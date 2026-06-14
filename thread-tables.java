@@ -47,3 +47,18 @@ public class Mainthread {
         t2.start();
     }
 }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+    package itjava.example;
+
+public class table {
+
+    void printtable(int num) {
+
+        synchronized(this) {
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(num + " x " + i + " = " + (num * i));
+            }
+        }
+
+    }
+}
