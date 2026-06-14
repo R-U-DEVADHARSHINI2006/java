@@ -23,5 +23,24 @@ public static void main(String[] args) {
 	c.eat();
 	c.sound();
 }
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+package r;
 
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	package r;
+
+public class Cat extends Animal{
+	void eat() {
+		super.eat();
+		System.out.println("Cat:eat");	
+	}
+void sound() {
+	System.out.println("Meows");
+}
 }
